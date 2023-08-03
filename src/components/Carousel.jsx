@@ -1,18 +1,10 @@
 import { styled } from "styled-components";
-import "swiper/css/bundle";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css/bundle";
-// import "swiper/css/pagination";
-
 // import required modules
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 const StyledSwiper = styled(Swiper)``;
-// const StyledSwiperWrapper = styled(SwiperWrapper)``;
 const StyledSwiperSlide = styled(SwiperSlide)`
   width: 16.875rem;
   height: 11.25rem;
@@ -38,9 +30,9 @@ export function Carousel() {
         <StyledSwiperSlide>Slide 1</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 2</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 3</StyledSwiperSlide>
-        {/* <StyledSwiperSlide>Slide 4</StyledSwiperSlide>
+        <StyledSwiperSlide>Slide 4</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 5</StyledSwiperSlide>
-        <StyledSwiperSlide>Slide 6</StyledSwiperSlide>
+        {/* <StyledSwiperSlide>Slide 6</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 7</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 8</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 9</StyledSwiperSlide> */}
