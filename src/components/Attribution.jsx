@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 const AttributionWrapper = styled.div`
   width: 100%;
   text-align: center;
-  padding-bottom: 0.55125rem;
+  padding-bottom: 1.55125rem;
 
   a {
     color: hsla(7, 77%, 66%, 1);
