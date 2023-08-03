@@ -1,7 +1,9 @@
 export { Button } from "./Button.styled.jsx";
-export { Header } from "./Header.jsx";
+export { HeaderFooter } from "./HeaderFooter.jsx";
 export { Skills } from "./Skills.jsx";
 export { Card } from "./Card.jsx";
 export { Introduction } from "./Introduction.jsx";
 export { Work } from "./Work.jsx";
 export { Carousel } from "./Carousel.jsx";
+export { Cta } from "./Cta.jsx";
+export { Description } from "./Description.jsx";

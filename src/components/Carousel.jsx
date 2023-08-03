@@ -1,24 +1,17 @@
-import slide4 from "../assets/image-slide-1.jpg";
-import slide5 from "../assets/image-slide-2.jpg";
-import slide1 from "../assets/image-slide-3.jpg";
-import slide2 from "../assets/image-slide-4.jpg";
-import slide3 from "../assets/image-slide-5.jpg";
 import { ReactComponent as IconPrev } from "../assets/icon-arrow-left.svg";
 import { ReactComponent as IconNext } from "../assets/icon-arrow-right.svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import required modules
+import { Navigation } from "swiper/modules";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
-// import required modules
-import { Navigation } from "swiper/modules";
-
-const slides = [slide1, slide2, slide3, slide4, slide5];
-
-export function Carousel() {
+export function Carousel({ slides }) {
   return (
     <>
       <Swiper
@@ -30,11 +23,16 @@ export function Carousel() {
         slidesPerView={"auto"}
         modules={[Navigation]}
         loopedSlides={2}
-        spaceBetween={32}
+        spaceBetween={16}
         centeredSlides={true}
         className="carousel"
+        breakpoints={{
+          600: {
+            spaceBetween: 30,
+          },
+        }}
       >
-        {slides.map((slide) => (
+        {slides?.map((slide) => (
           <SwiperSlide
             key={slide}
             className="carousel__slide"

@@ -5,18 +5,19 @@ body {
   background-color: $clr-neutral-200;
   overflow-x: hidden;
 }
-// .app {
-//   padding: 1rem;
-// }
-.header {
+#root {
+  padding-top: 1rem;
+}
+.header-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem 0;
+  padding: 0 $padding-x 0;
+}
+.description {
+  text-align: center;
+  margin-inline: $padding-x;
 
-  &__content {
-    text-align: center;
-  }
   &__heading {
     line-height: normal;
     margin-top: 2rem;
@@ -31,7 +32,7 @@ body {
   max-width: 3rem;
 }
 .skills {
-  padding-inline: 1rem;
+  padding-inline: $padding-x;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 11.375rem) 9.875rem repeat(2, 11.375rem);
@@ -79,6 +80,7 @@ body {
 .introduction {
   margin-top: 6.25rem;
   text-align: center;
+  margin-inline: $padding-x;
   display: grid;
   gap: 2.5rem;
   &__image {
@@ -103,14 +105,13 @@ body {
 
 .work {
   &__heading {
-    padding-inline: 1rem;
     text-align: center;
     margin-top: 6.25rem;
     line-height: normal;
   }
 }
 .carousel {
-  margin-block: 2rem;
+  margin-top: 2rem;
   &__slide {
     width: 16.875rem !important;
     height: 11.25rem !important;
@@ -133,4 +134,90 @@ body {
     display: grid;
     place-items: center;
   }
+}
+
+.cta {
+  margin-inline: $padding-x;
+  margin-top: 6.25rem;
+  margin-bottom: 2.5rem;
+  background-color: $clr-neutral-900;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  &__heading {
+    line-height: normal;
+  }
+  &__body {
+    margin-block: 1.5rem;
+  }
+}
+
+footer .header-footer {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 37.5rem) {
+  #root {
+    padding-top: 2.12rem;
+  }
+  .logo {
+    max-width: revert;
+  }
+  .description {
+    margin-top: 4rem;
+    &__body {
+      margin-top: 1.69rem;
+      max-width: 90%;
+      margin-inline: auto;
+    }
+  }
+  .skills {
+    margin-top: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 11.375rem 9.875rem 11.375rem;
+    grid-template-areas:
+      "a a b c"
+      "a a d d"
+      "e e f f";
+  }
+  .introduction {
+    position: relative;
+    text-align: start;
+    &__image {
+      position: absolute;
+      padding-inline: 0;
+      height: 100%;
+      left: -5.25rem;
+    }
+    &__content {
+      max-width: 50%;
+      margin-left: auto;
+    }
+    &__button {
+      margin-inline: revert;
+    }
+  }
+  .carousel {
+    margin-top: 3.5rem;
+
+    &__slide {
+      width: 33.75rem !important;
+      height: 22.5rem !important;
+    }
+    &__buttons {
+      margin-top: 3.5rem;
+    }
+  }
+  .cta {
+    padding: 3.5rem 4.69rem 4rem;
+    margin-bottom: 3.5rem;
+    &__body {
+      margin-block: 1.63rem;
+      line-height: 1.55556;
+    }
+  }
+}
+
+footer .header-footer {
+  margin-bottom: 3.5rem;
 }

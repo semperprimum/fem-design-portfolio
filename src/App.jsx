@@ -1,13 +1,29 @@
 import "./App.scss";
-import { Header, Introduction, Skills, Work } from "./components";
+import {
+  Cta,
+  HeaderFooter,
+  Introduction,
+  Skills,
+  Work,
+  Description,
+} from "./components";
 
 export default function App() {
   return (
-    <main className="app">
-      <Header />
-      <Skills />
-      <Introduction />
-      <Work />
-    </main>
+    <>
+      <header>
+        <HeaderFooter />
+      </header>
+      <main>
+        <Description />
+        <Skills />
+        <Introduction />
+        <Work />
+        <Cta />
+      </main>
+      <footer>
+        <HeaderFooter />
+      </footer>
+    </>
   );
 }
