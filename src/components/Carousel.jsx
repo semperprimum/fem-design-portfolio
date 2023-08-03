@@ -4,7 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Navigation } from "swiper/modules";
 
-const StyledSwiper = styled(Swiper)``;
+const StyledSwiper = styled(Swiper)`
+  margin-block: 2rem;
+`;
 const StyledSwiperSlide = styled(SwiperSlide)`
   width: 16.875rem;
   height: 11.25rem;
@@ -18,7 +20,7 @@ const SwiperButton = styled(Navigation)`
 export function Carousel() {
   return (
     <>
-      <Swiper
+      <StyledSwiper
         slidesPerView={"auto"}
         centeredSlides={true}
         spaceBetween={16}
@@ -36,7 +38,7 @@ export function Carousel() {
         <StyledSwiperSlide>Slide 7</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 8</StyledSwiperSlide>
         <StyledSwiperSlide>Slide 9</StyledSwiperSlide> */}
-      </Swiper>
+      </StyledSwiper>
     </>
   );
 }
