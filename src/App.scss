@@ -109,3 +109,28 @@ body {
     line-height: normal;
   }
 }
+.carousel {
+  margin-block: 2rem;
+  &__slide {
+    width: 16.875rem !important;
+    height: 11.25rem !important;
+    border-radius: 0.625rem;
+    background-size: cover;
+    background-position: center;
+  }
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  &__button {
+    border: none;
+    background-color: $clr-neutral-900;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100vmax;
+    display: grid;
+    place-items: center;
+  }
+}
