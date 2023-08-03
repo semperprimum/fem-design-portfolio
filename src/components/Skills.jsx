@@ -10,7 +10,7 @@ export function Skills() {
       />
       <Card
         icon="/assets/images/pattern-ui-ux.svg"
-        text="UI/IX"
+        text="UI/UX"
         className="text-100 fs-500 fw-bold bg-yellow"
       />
       <Card
@@ -30,7 +30,7 @@ export function Skills() {
       />
       <Card
         icon="/assets/images/pattern-motion-graphics.svg"
-        text="Graphic Design"
+        text="Motion Graphics"
         className="text-100 fs-500 fw-bold bg-indigo"
       />
     </section>

@@ -7,7 +7,7 @@ export function Introduction() {
       <img className="introduction__image" src={imageAmy} alt="Amy" />
       <div className="introduction__content">
         <h2 className="introduction__heading | fs-700 text-900 fw-bold">
-          I'm Amy, and I'd love to work on your next project
+          I’m Amy, and I’d love to work on your next project
         </h2>
         <p className="introduction__body | fs-400 text-400 fw-regular">
           I love working with others to create beautiful design solutions. I’ve

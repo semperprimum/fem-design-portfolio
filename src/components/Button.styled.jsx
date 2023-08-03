@@ -11,7 +11,7 @@ export const Button = styled.button`
   line-height: 2;
   font-size: 0.875rem;
 
-  @media only screen and (min-width: 37.5rem) {
+  @media only screen and (min-width: 37.5em) {
     font-size: 1rem;
     line-height: 1.75;
     padding: 0.87rem 2.81rem;

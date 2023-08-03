@@ -11,7 +11,9 @@ export function Cta() {
           can move forward from there.
         </p>
       </div>
-      <Button primary="true">Free Consultation</Button>
+      <Button className="cta__button" primary="true">
+        Free Consultation
+      </Button>
     </section>
   );
 }

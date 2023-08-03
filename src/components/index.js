@@ -7,3 +7,4 @@ export { Work } from "./Work.jsx";
 export { Carousel } from "./Carousel.jsx";
 export { Cta } from "./Cta.jsx";
 export { Description } from "./Description.jsx";
+export { Attribution } from "./Attribution.jsx";

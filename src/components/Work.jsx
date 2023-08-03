@@ -10,7 +10,7 @@ const slides = [slide1, slide2, slide3, slide4, slide5];
 export function Work() {
   return (
     <section className="work">
-      <h3 className="work__heading | fs-600 fw-bold text-900">My work</h3>
+      <h3 className="work__heading | fs-600 fw-bold text-900">My Work</h3>
       <Carousel slides={slides} />
     </section>
   );

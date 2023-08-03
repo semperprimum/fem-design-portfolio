@@ -6,11 +6,12 @@ import {
   Skills,
   Work,
   Description,
+  Attribution,
 } from "./components";
 
 export default function App() {
   return (
-    <>
+    <div className="app">
       <header>
         <HeaderFooter />
       </header>
@@ -23,7 +24,8 @@ export default function App() {
       </main>
       <footer>
         <HeaderFooter />
+        <Attribution />
       </footer>
-    </>
+    </div>
   );
 }
