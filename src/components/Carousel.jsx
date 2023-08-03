@@ -6,6 +6,11 @@ import { Navigation } from "swiper/modules";
 
 const StyledSwiper = styled(Swiper)`
   margin-block: 2rem;
+
+  & > .swiper-button-prev,
+  & > .swiper-button-next {
+    color: coral;
+  }
 `;
 const StyledSwiperSlide = styled(SwiperSlide)`
   width: 16.875rem;
