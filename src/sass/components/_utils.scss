@@ -1,0 +1,56 @@
+@use "./variables" as *;
+
+.text-900 {
+  color: $clr-neutral-900;
+}
+.text-400 {
+  color: $clr-neutral-400;
+}
+.text-100 {
+  color: $clr-neutral-100;
+}
+.bg-black {
+  background-color: $clr-neutral-900;
+}
+.bg-purple {
+  background-color: $clr-accent-purple;
+}
+.bg-yellow {
+  background-color: $clr-accent-yellow;
+}
+.bg-pink {
+  background-color: $clr-accent-pink;
+}
+.bg-red {
+  background-color: $clr-accent-red;
+}
+.bg-cyan {
+  background-color: $clr-accent-cyan;
+}
+.bg-indigo {
+  background-color: $clr-accent-indigo;
+}
+.fs-300 {
+  font-size: $fs-300;
+}
+.fs-400 {
+  font-size: $fs-400;
+}
+.fs-500 {
+  font-size: $fs-500;
+}
+.fs-600 {
+  font-size: $fs-600;
+}
+.fs-700 {
+  font-size: $fs-700;
+}
+.fs-800 {
+  font-size: $fs-800;
+}
+.fw-bold {
+  font-weight: $fw-bold;
+}
+.fw-regular {
+  font-weight: $fw-regular;
+}
