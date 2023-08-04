@@ -1,38 +1,48 @@
 import { Card } from "../components";
 
 export function Skills() {
+  const cards = [
+    {
+      text: "Graphic Design",
+      class: "bg-purple",
+      patternFileName: "pattern-graphic-design.svg",
+    },
+    {
+      text: "UI/UX",
+      class: "bg-yellow",
+      patternFileName: "pattern-ui-ux.svg",
+    },
+    {
+      text: "Apps",
+      class: "bg-pink",
+      patternFileName: "pattern-apps.svg",
+    },
+    {
+      text: "Illustrations",
+      class: "bg-red",
+      patternFileName: "pattern-illustrations.svg",
+    },
+    {
+      text: "Photography",
+      class: "bg-cyan",
+      patternFileName: "pattern-photography.svg",
+    },
+    {
+      text: "Motion Graphics",
+      class: "bg-indigo",
+      patternFileName: "pattern-motion-graphics.svg",
+    },
+  ];
   return (
     <section className="skills">
-      <Card
-        icon="/assets/images/pattern-graphic-design.svg"
-        text="Graphic Design"
-        className="text-100 fs-500 fw-bold bg-purple"
-      />
-      <Card
-        icon="/assets/images/pattern-ui-ux.svg"
-        text="UI/UX"
-        className="text-100 fs-500 fw-bold bg-yellow"
-      />
-      <Card
-        icon="/assets/images/pattern-apps.svg"
-        text="Apps"
-        className="text-100 fs-500 fw-bold bg-pink"
-      />
-      <Card
-        icon="/assets/images/pattern-illustrations.svg"
-        text="Illustrations"
-        className="text-100 fs-500 fw-bold bg-red"
-      />
-      <Card
-        icon="/assets/images/pattern-photography.svg"
-        text="Photography"
-        className="text-100 fs-500 fw-bold bg-cyan"
-      />
-      <Card
-        icon="/assets/images/pattern-motion-graphics.svg"
-        text="Motion Graphics"
-        className="text-100 fs-500 fw-bold bg-indigo"
-      />
+      {cards.map((card) => (
+        <Card
+          key={card.text}
+          icon={`/assets/images/${card.patternFileName}`}
+          text={card.text}
+          className={`text-100 fs-500 fw-bold bg-purple ${card.class}`}
+        />
+      ))}
     </section>
   );
 }
